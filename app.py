@@ -6,7 +6,8 @@ app = Flask(__name__)
 def home():
     return jsonify({
         "message": "Hello from Flask!",
-        "status": "running"
+        "status": "running",
+        "ui" : "new changes for ui"
     })
 
 @app.route("/health")
